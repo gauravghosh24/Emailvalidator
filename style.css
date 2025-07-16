@@ -1,0 +1,121 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding : 10px 20px;
+}
+ul{
+    display: flex;
+}
+ul li{
+    list-style: none;
+    padding: 0 13px;
+
+}
+ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+ul li a:hover {
+    color: #b193cd;
+}
+
+main{
+    min-height: 85vh;
+    padding: 2px;
+}
+.container {
+    background: linear-gradient(145deg, #d0d0d0, #f5f5f5); /* slightly darker tones */
+    max-width: 80vw;
+    margin: 0 auto;
+    padding: 20px;
+
+    /* 3D effect */
+    box-shadow: 8px 8px 16px rgba(0,0,0,0.25),
+                -4px -4px 12px rgba(255,255,255,0.5);
+    border-radius: 12px;
+}
+
+
+.container h1{
+    margin-bottom: 20px;
+}
+input[type='text']{
+    min-width: 23vw;
+    padding: 3px 12px;
+    border: 2px solid black;
+    border-radius: 4px;
+    font-size: 20px;
+}
+
+.btn{
+    background: black;
+    color: white;
+    padding: 9px 12px;
+    border: 1px solid gray;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.result {
+    background: linear-gradient(145deg, #e6e6e6, #ffffff);
+    max-width: 80vw;
+    margin: 20px auto;
+    padding: 24px 32px;
+
+    border-radius: 16px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1),
+                -6px -6px 16px rgba(255, 255, 255, 0.8);
+
+    font-family: "Segoe UI", sans-serif;
+    font-size: 16px;
+    color: #333;
+
+    transition: all 0.3s ease;
+}
+.result:hover {
+    transform: translateY(-2px);
+    box-shadow: 12px 12px 24px rgba(0, 0, 0, 0.15),
+                -8px -8px 20px rgba(255, 255, 255, 0.9);
+}
+
+#resultCont div::first-letter{
+    text-transform: uppercase;
+}
+.btn:hover{
+    background-color: #282628;
+}
+.logo svg{
+    width: 20px;
+    height: 15px;
+}
+@media screen and (max-width: 600px) {
+   .container{
+     font-size: 12px;
+   }
+    nav{
+        flex-direction: column;
+    }
+    
+}
+footer{
+    font-size: small;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    bottom: 0;
+    width: 100%;
+}
